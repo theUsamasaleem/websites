@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"/>
+
+     <!-- Popper JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-16x16.png">
+  </head>
+  <body>
+
+
+     
+      <!-- ========================================= -->
+  
+ 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-jet-fighter-up"></i></button>
+    <!-- Navbar Checking -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand"  href="index.html"><img src="Images/Fat-Kat-Logistics-LLC-Logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Services1</a></li>
+                <li><a class="dropdown-item" href="#">Services2</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Services3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="whychooseus.html">Why Choose Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" name="search">
+            <div class="Hotbg">
+              <input type="text" name="" class="Hotbg-txt" placeholder="Search >>>">
+              <a href="#" class="Hotbg-btn">
+                <i class="fa fa-search"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Banner -->
+    <section>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12 pd-0">
+                  <div class="pagebanner">
+                    <h1>Register</h1>
+                  </div>
+                </div>
+              </div>      
+        </div>
+     </section>
+
+     <section class="loginregistration loginin rightlogin">       
+      <h4 class="text-blue text-center font-weight-bold" style="font-size: 30px;">
+        Register Your Account
+    </h4>
+        <div class="container">
+            <br />      
+            <div class="col-lg-5 m-auto d-block">
+                <form action="#" onsubmit="return validation()" class="bg-light">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" name="name" class="form-control" id="name" autocomplete="off" />
+                        <span id="Name" class="text-danger font-weight-regular"> </span>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" name="email" class="form-control" id="emails" autocomplete="off" />
+                        <span id="emailids" class="text-danger font-weight-regular"> </span>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="text" placeholder="Username" name="user" class="form-control" id="user" autocomplete="off" />
+                        <span id="username" class="text-danger font-weight-regular"> </span>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" name="pass" class="form-control" id="pass" autocomplete="off" />
+                        <span id="passwords" class="text-danger font-weight-regular">
+                        </span>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" name="conpass" class="form-control" id="conpass" autocomplete="off" />
+                        <span id="confrmpass" class="text-danger font-weight-regular">
+                        </span>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="text" placeholder="Mobile Number" name="mobile" class="form-control" id="mobileNumber" autocomplete="off" />
+                        <span id="mobileno" class="text-danger font-weight-regular"> </span>
+                    </div>
+        
+                    <input type="submit" name="submit" value="Submit" class="btn btn-primary" autocomplete="off" />
+                    <input type="reset" placeholder="" name="reset" value="Reset" class="btn btn-secondary" autocomplete="off" />
+                    <p> Already have an account?<a href="login_.html"> Login</a></p>
+                    <p>By creating an account you agree the <a href="Term&Condition.html">Term & Conditions</a> </p>
+                </form>
+        
+                <br /><br />
+            </div>
+        </div>
+     </section>
+
+
+
+
+    <script type="text/javascript">
+      function validation() {
+        var name = document.getElementById("name").value;
+        var user = document.getElementById("user").value;
+        var pass = document.getElementById("pass").value;
+        var confirmpass = document.getElementById("conpass").value;
+        var mobileNumber = document.getElementById("mobileNumber").value;
+        var emails = document.getElementById("emails").value;
+
+        if (name == "") {
+          document.getElementById("Name").innerHTML =
+            " ** Please fill the Name field";
+          return false;
+        }
+
+        if (emails == "") {
+          document.getElementById("emailids").innerHTML =
+            " ** Please fill the email id field";
+          return false;
+        }
+        if (emails.indexOf("@") <= 0) {
+          document.getElementById("emailids").innerHTML = " ** Invalid Email";
+          return false;
+        }
+
+        if (
+          emails.charAt(emails.length - 4) != "." &&
+          emails.charAt(emails.length - 3) != "."
+        ) {
+          document.getElementById("emailids").innerHTML = " ** Invalid Email";
+          return false;
+        }
+
+        if (user == "") {
+          document.getElementById("username").innerHTML =
+            " ** Please fill the username field";
+          return false;
+        }
+        if (user.length <= 3 || user.length > 20) {
+          document.getElementById("username").innerHTML =
+            " ** Username lenght must be between 3 and 20";
+          return false;
+        }
+        if (!isNaN(user)) {
+          document.getElementById("username").innerHTML =
+            " ** only characters are allowed";
+          return false;
+        }
+
+        if (pass == "") {
+          document.getElementById("passwords").innerHTML =
+            " ** Please fill the password field";
+          return false;
+        }
+        if (pass.length <= 5 || pass.length > 20) {
+          document.getElementById("passwords").innerHTML =
+            " ** Passwords lenght must be between  5 and 20";
+          return false;
+        }
+
+        if (pass != confirmpass) {
+          document.getElementById("confrmpass").innerHTML =
+            " ** Password Mismatch";
+          return false;
+        }
+
+        if (confirmpass == "") {
+          document.getElementById("confrmpass").innerHTML =
+            " ** Please fill the confirmpassword field";
+          return false;
+        }
+
+        if (mobileNumber == "") {
+          document.getElementById("mobileno").innerHTML =
+            " ** Please fill the mobile NUmber field";
+          return false;
+        }
+        if (isNaN(mobileNumber)) {
+          document.getElementById("mobileno").innerHTML =
+            " ** user must write digits only not characters";
+          return false;
+        }
+        if (mobileNumber.length != 11) {
+          document.getElementById("mobileno").innerHTML =
+            " ** Mobile Number must be 11 digits only";
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
